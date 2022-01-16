@@ -1,0 +1,304 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #2b2a33;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+section article h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+section article p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+section article a {
+  color: red;
+  font-size: 1rem;
+}
+
+.header {
+  text-transform: capitalize;
+  padding: 2rem 0 0 0;
+}
+
+.header .page-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
+.nav {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background-color: #fff;
+  border-top: 2px solid #4e8fbb;
+}
+
+.nav ul {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2px;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+.nav li {
+  font-size: 0.8rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: #4e8fbb;
+  font-weight: 600;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+section .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+section article {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  border-top: 2px solid #4e8fbb;
+  background-color: #fff;
+}
+
+section article a,
+section article h2,
+section article p {
+  padding: 0.5rem;
+}
+
+section article:nth-child(2) img {
+  width: 40%;
+  height: 40%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+section article:nth-child(3) img {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+section .two article:nth-child(1) a {
+  background-color: red;
+  color: #fff;
+}
+
+section .two article:nth-child(2) h2 {
+  background-color: #4e8fbb;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  section .container {
+    display: -ms-grid;
+    display: grid;
+    gap: 20px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 984px) {
+  section .container {
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+  }
+  section .one {
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+  }
+  section .one article:nth-child(3) {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  section .one article:nth-child(3) img {
+    width: 70%;
+    height: 70%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section .one {
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
